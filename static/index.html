@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="image/logo small.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Spotify-like Homepage</title>
+  <style>
+  /*  body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    
+    .spotify-logo {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    
+    .main-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background-color: #1DB954;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 4px;
+      text-decoration: none;
+    }*/
+  </style>
+</head>
+<body>
+  <img class="spotify-logo" src="image/logo.png" alt="Spotify Logo">
+  <!-- <h1 class="main-title">Welcome to Spotify</h1>
+  <a class="cta-button" href="#">Get Started</a> -->
+  <form disabled action="#" id="form">
+    <input id="idvalue" type="search" placeholder="Enter id" required pattern="^id\d+$" >
+    <button disabled id="find" type="submit">Find</button>
+  </form>
+  <div id="welcome"></div>
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+  <div id="proc">0%</div>
+  <img src="image/loading.gif" id="imgload">
+  <script type="text/javascript" src="js/check.js"></script>
+  <script type="text/javascript" src="js/reqSpotify.js"></script>
+</body>
+</html>
