@@ -97,8 +97,8 @@ async function getTocken() {
 		//body: JSON.stringify({mark: "Audi", ort:"Cottbus", distance:"10"})
 		body: new URLSearchParams({
 			'grant_type': 'client_credentials',
-			'client_id': 'dd85e7ed3d924d22ad02555764766cca',
-			'client_secret': 'ad6fcc32252f4bd8ab2f22337a3e1c48'
+			'client_id': '',
+			'client_secret': ''
 		//JSON.stringify(data)
 		})
 	});
@@ -279,9 +279,9 @@ function generateRandomString(length) {
 }
 
 // Константы, которые необходимо указать
-const CLIENT_ID = 'dd85e7ed3d924d22ad02555764766cca';
+const CLIENT_ID = '';
 const REDIRECT_URI = 'http://192.168.2.32:3000';
-const CLIENT_SECRET = 'ad6fcc32252f4bd8ab2f22337a3e1c48';
+const CLIENT_SECRET = '';
 
 async function authorize() {
   var state = generateRandomString(16);
@@ -353,7 +353,7 @@ async function refreshToken() {
 
 async function authorizeVk() {
 	var HOST = '192.168.2.32:3000'
-	var VKid = document.getElementById('idvalue').value//'id267134417'
+	var VKid = document.getElementById('idvalue').value
 	var list = await fetch(`http://${HOST}/VK/audio?id=${VKid}`, {method: 'GET'})
 		.then(response => {
 				if (response.ok) {
