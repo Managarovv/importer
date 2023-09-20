@@ -1,0 +1,111 @@
+body {
+  /*position: absolute;*/
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    
+.spotify-logo {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    
+.main-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+.cta-button {
+      display: inline-block;
+      background-color: #1DB954;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+#myProgress {
+  background-color: #4d4d4d;
+  visibility: hidden;
+    position: absolute;
+    height: 6px;
+    top: 50vh;
+    left:25vw;
+    width: 50vw;
+    border: 0px solid grey;
+    border-radius: 15px;
+    
+}
+
+#myBar {
+  position: absolute;
+    background-color: #1fdf64;
+    width: 10px;
+    max-width: 100%;
+    height: 6px;
+    border-radius: 15px;
+    
+}
+#proc{
+  position: absolute;
+  visibility: hidden;
+  color: white;
+    top: 55vh;
+    left: 48vw;
+}
+
+.spotify-logo{
+  width: 7%;
+  height: 7%;
+  border-radius: 25%;
+}
+
+form{
+  visibility: hidden;
+  /*display: flex;
+  vertical-align: top;*/
+  position: absolute;
+  min-width: 250px;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+input[type="search"]{
+  outline: none;
+  border: 2px solid black;
+  padding: 5px 100px 5px 30px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-radius: 25px;
+}
+button[type="submit"]{
+  position: absolute; top: 7px; right: 10px;
+  z-index: 9;
+  outline: none;
+  border: none;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0);
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+button[type="submit"]:hover{
+  color: white;
+  background: #1ed760;
+}
+
+input:invalid:not(:placeholder-shown){
+  border-color: red;
+}
+
+#imgload{
+  width: 320px;
+  height: 320px;
+  visibility: hidden;
+}
